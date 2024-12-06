@@ -1,5 +1,5 @@
 :root {
-    --padding-size: 12px;
+    --padding-size: 24px;
 }
 
 * {
@@ -17,7 +17,7 @@ main {
     background-color: #222222;
     width: 100vw;
     height: 100vh;
-    padding: 0 20%;
+    padding: 0 15%;
     display: flex;
 }
 
@@ -36,16 +36,48 @@ main {
 
 .content {
     background-color: whitesmoke;
-    flex: 1;
+    flex: 1.8;
+}
+
+.content p {
+    padding: var(--padding-size);
+}
+
+.content h1 {
+    margin: var(--padding-size) 0;
 }
 
 .inputs {
     display: flex;
     flex-wrap: wrap;
+    gap: var(--padding-size)
 }
 
-.inputs>input {
+.inputs>.input {
+    display: flex;
+    flex-direction: column;
     width: 40%;
+}
+
+.input label {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+input {
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
 }
 
 fieldset {
@@ -54,6 +86,8 @@ fieldset {
     box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.507);
     margin-top: calc(var(--padding-size)*2);
     margin-bottom: calc(var(--padding-size)*2);
+    padding: var(--padding-size);
+    color: rgb(68, 68, 68)
 }
 
 .image {
@@ -81,7 +115,7 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: calc(var(--padding-size) * 2);
+    gap: var(--padding-size);
     font-family: "Vikings", "Arial";
     font-size: 96px;
     background-color: rgba(240, 178, 86, 0.178);
