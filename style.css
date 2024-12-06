@@ -21,25 +21,18 @@ main {
     display: flex;
 }
 
-.content {
+form {
     font-family: "Roboto", serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: var(--padding-size); */
-}
-
-.content p {
-    font-weight: 800;
-    font-size: 24px;
-}
-
-.content {
     background-color: whitesmoke;
     flex: 1.8;
 }
 
-.content p {
+form p {
+    font-weight: 800;
+    font-size: 24px;
     padding: var(--padding-size);
 }
 
@@ -78,6 +71,7 @@ input:invalid {
 
 input:focus {
     border: 1px solid blue;
+    outline: none;
 }
 
 fieldset {
@@ -88,6 +82,18 @@ fieldset {
     margin-bottom: calc(var(--padding-size)*2);
     padding: var(--padding-size);
     color: rgb(68, 68, 68)
+}
+
+button {
+    margin: 0 var(--padding-size);
+    padding: calc(var(--padding-size) / 2) var(--padding-size);
+    width: 40%;
+    border: none;
+    border-radius: 12px;
+    background-color: sandybrown;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
 }
 
 .image {
