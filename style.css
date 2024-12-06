@@ -1,7 +1,16 @@
+:root {
+    --padding-size: 12px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Vikings";
+    src: url(res/norse-font/Norse-KaWl.otf);
 }
 
 main {
@@ -10,6 +19,41 @@ main {
     height: 100vh;
     padding: 0 20%;
     display: flex;
+}
+
+.content {
+    font-family: "Roboto", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: var(--padding-size); */
+}
+
+.content p {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.content {
+    background-color: whitesmoke;
+    flex: 1;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs>input {
+    width: 40%;
+}
+
+fieldset {
+    background-color: white;
+    border: 0;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.507);
+    margin-top: calc(var(--padding-size)*2);
+    margin-bottom: calc(var(--padding-size)*2);
 }
 
 .image {
@@ -22,7 +66,41 @@ main {
     /* background-size: initial; */
 }
 
-.content {
-    background-color: aliceblue;
-    flex: 1;
+.image {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.image a {
+    color: white;
+}
+
+.odin-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--padding-size) * 2);
+    font-family: "Vikings", "Arial";
+    font-size: 96px;
+    background-color: rgba(240, 178, 86, 0.178);
+    padding: var(--padding-size);
+    margin-top: 25vh;
+}
+
+.odin-logo>img {
+    height: 160px;
+}
+
+.image-footer {
+    margin-top: auto;
+    padding: var(--padding-size);
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.image-footer p {
+    text-align: center;
 }

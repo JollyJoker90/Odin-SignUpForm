@@ -6,47 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="code.js" defer></script>
 </head>
 
 <body>
     <main>
         <div class="image">
-            <div class="odin-logo"></div>
-            <div class="footer"></div>
+            <div class="odin-logo">
+                <img src="res/odin-lined.png" alt="odin-logo">
+                <p>ODIN</p>
+            </div>
+            <div class="image-footer">
+                Photo by <a
+                    href="https://unsplash.com/@1an6g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jimmy
+                    Larry</a> on <a
+                    href="https://unsplash.com/photos/desert-under-milky-way-7uvixXrQkfw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </div>
         </div>
         <div class="content">
-            <div class="form">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque nam quasi
-                    repellendus, vel vitae rem ut suscipit, eum asperiores, officiis ratione nemo facilis dolores
-                    quaerat
-                    quibusdam molestiae eius quas.</p>
-                <p>You <em>know</em> you want to.</p>
-                <form action="" method="post">
-                    <fieldset>
-                        <h1>Let's do this!</h1>
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
-
-                        <label for="last_name">First Name</label>
-                        <input type="text" name="last_name" id="last_name">
-
-                        <label for="email">First Name</label>
-                        <input type="email" name="email" id="email">
-
-                        <label for="phone">First Name</label>
-                        <input type="email" name="phone" id="phone">
-
-                        <label for="pw">First Name</label>
-                        <input type="password" name="pw" id="pw">
-
-                        <label for="pw-re">First Name</label>
-                        <input type="password" name="pw-re" id="pw-re">
-                    </fieldset>
-                    <button type="submit" class="create"></button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
-                </form>
-            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita atque nam quasi
+                repellendus, vel vitae rem ut suscipit, eum asperiores, officiis ratione nemo facilis dolores
+                quaerat
+                quibusdam molestiae eius quas.</p>
+            <p>You <em>know</em> you want to.</p>
+            <form action="" method="post">
+                <fieldset>
+                    <h1>Let's do this!</h1>
+                    <div class="inputs">
+                        <div class="input">
+                            <label for="first_name">First name</label>
+                            <input type="text" name="first_name" id="first_name">
+                        </div>
+                        <div class="input">
+                            <label for="last_name">Last name</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div class="input">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" id="phone">
+                        </div>
+                        <div class="input">
+                            <label for="pw">Password</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="input">
+                            <label for="pw-re">Confirm Password</label>
+                            <input type="password" name="pw-re" id="pw-re">
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="create">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </form>
         </div>
     </main>
 </body>
