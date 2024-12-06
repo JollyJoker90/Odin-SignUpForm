@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #222222;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 20%;
+    display: flex;
+}
+
+.image {
+    background-image: url(res/jimmy-larry-7uvixXrQkfw-unsplash.jpg);
+    flex: 1;
+    background-size: cover;
+    /* backpo */
+    /* width: 200px;
+    height: 600px; */
+    /* background-size: initial; */
+}
+
+.content {
+    background-color: aliceblue;
+    flex: 1;
+}
